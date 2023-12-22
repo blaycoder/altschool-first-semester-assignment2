@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Assignment 2</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="individuals-sign-up-page">
+                <div class="individuals-content">
+                    <img src="assets/images/logo.png" alt="logo" role="img">
+                    <h2 class="title">For Individuals</h2>
+                    <p class="desktop-text text">Start benefiting from the wellness experience. For companies looking on increasing
+                        productivity, and improving
+                        organization wellness.</p>
+                    <p class="mobile-text text"> Inspiring wholesome harmony for the mind, body and spirit, for everyone, everywhere.</p>
+                </div>
+                <div class="individuals-sign-up-form">
+                    <div class="form-container">
+                        <form action="">
+                            <div class="form-input-row">
+                                <div class="first-name-field">
+                                    <label for="firstName">First Name:</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="last-name-field">
+                                    <label for="lastName">Last Name:</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+
+                            <div class="form-input-row">
+                                <div class="gender-field">
+                                    <label for="gender">Gender:</label>
+                                    <select id="gender" name="gender">
+                                        <option value="none" selected disabled>Select here</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                    </select>
+                                </div>
+                                <div class="dob-field">
+                                    <label for="dob">Date of Birth:</label>
+                                    <input type="text" id="dob" name="dob" onclick="showDatePicker()" required
+                                        placeholder="Select here" readonly>
+                                </div>
+                            </div>
+
+                            <div class="form-input-row">
+                                <div class="weight-field">
+                                    <label for="weight">Weight (KG):</label>
+                                    <input type="text" id="weight" name="weight" required placeholder="Enter Weight">
+                                </div>
+                                <div class="height-field">
+                                    <label for="height">Height (CM):</label>
+                                    <input type="text" id="height" name="height" required
+                                        placeholder="Enter height here...">
+                                </div>
+                            </div>
+
+                            <div class="form-input-row" id="form-input-row-activity">
+                                <div class="activity-field">
+                                    <label for="activity">Activity:</label>
+                                    <select name="activity" id="activity">
+                                        <option value="none" selected disabled>Select here</option>
+                                        <option value="web">Web Development</option>
+                                        <option value="software">Software</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-input-row" id="form-input-row-password">
+                                <div class="password-field">
+                                    <label for="password">Password:</label>
+                                    <input type="password" id="password" name="password" required>
+                                    <img src="assets/images/password-icon.png" alt="">
+                                </div>
+                            </div>
+                            <button type="submit">Register</button>
+                        </form>
+                        <div class="register-confirmation-text">
+                            <h4>By clicking Register, you agree to our <span class="terms-conditions-link">
+                                    <a href="#">Terms of Use</a>
+                                </span> and our <span class="privacy-policy-link">
+                                    <a href="#">Privacy Policy</a>
+                                </span> </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
