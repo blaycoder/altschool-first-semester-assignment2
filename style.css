@@ -253,19 +253,7 @@ button:-moz-focusring,
 */
 
 input[type="date"]::-webkit-calendar-picker-indicator {
-  position: relative;
-  background-image: url("./assets/images/angle-down.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 20px;
-}
-
-.dob-field input[type="text"] {
-  position: relative;
-  background-image: url("./assets/images/angle-down.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 20px;
+display: none;
 }
 
 input[type="date"]::-webkit-datetime-edit {
@@ -486,6 +474,16 @@ template {
   width: 238px;
 }
 
+.dob-field {
+  position: relative;
+}
+
+.dob-field img {
+  position: absolute;
+  top: 35%;
+  left: 85%;
+}
+
 .form-container .form-input-row input:focus {
   border: 1px solid #2ec4b6;
   border-radius: 2px;
@@ -533,7 +531,7 @@ select {
   margin-block-start: 16px;
 }
 
-.register-confirmation-text h4 {
+.register-confirmation-text h3 {
   color: var(--heading-color);
   text-align: center;
   line-height: 25px;
@@ -558,6 +556,7 @@ select {
     align-items: unset;
   }
   .form-container{
+    position: relative;
     width: fit-content;
     margin: 0 auto;
     height: unset;
@@ -568,4 +567,12 @@ select {
   }
   .mobile-text{display: block;}
   .desktop-text{display: none;}
+
+  .register-confirmation-text{
+    position: absolute;
+    bottom: -7%;
+    text-align: center;
+    right: 0%;
+    left: -5%;
+  }
 }

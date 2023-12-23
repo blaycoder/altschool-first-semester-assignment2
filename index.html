@@ -38,7 +38,7 @@
                             <div class="form-input-row">
                                 <div class="gender-field">
                                     <label for="gender">Gender:</label>
-                                    <select id="gender" name="gender">
+                                    <select id="gender" name="gender" aria-label="Gender">
                                         <option value="none" selected disabled>Select here</option>
                                         <option value="male">Male</option>
                                         <option value="female">Female</option>
@@ -48,6 +48,7 @@
                                     <label for="dob">Date of Birth:</label>
                                     <input type="text" id="dob" name="dob" onclick="showDatePicker()" required
                                         placeholder="Select here" readonly>
+                                    <img src="assets/images/calendar-icon.png" alt="calendar-icon">
                                 </div>
                             </div>
 
@@ -78,17 +79,17 @@
                                 <div class="password-field">
                                     <label for="password">Password:</label>
                                     <input type="password" id="password" name="password" required>
-                                    <img src="assets/images/password-icon.png" alt="">
+                                    <img src="assets/images/password-icon.png" alt="password icon">
                                 </div>
                             </div>
                             <button type="submit">Register</button>
                         </form>
                         <div class="register-confirmation-text">
-                            <h4>By clicking Register, you agree to our <span class="terms-conditions-link">
+                            <h3>By clicking Register, you agree to our <span class="terms-conditions-link">
                                     <a href="#">Terms of Use</a>
                                 </span> and our <span class="privacy-policy-link">
                                     <a href="#">Privacy Policy</a>
-                                </span> </h4>
+                                </span> </h3>
                         </div>
                     </div>
                 </div>
